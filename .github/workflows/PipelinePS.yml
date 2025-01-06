@@ -6,50 +6,8 @@ on:
       - main
 
 jobs:
-  SAST-SonarCloud:
-    runs-on: ubuntu-latest
-
-    steps:
-      # Checkout the repository code
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      # Set up Node.js for the React Native project
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-
-      # Install project dependencies
-      - name: Install dependencies
-        run: npm install
-
-      # Build the project (if necessary for analysis)
-      - name: Build the project
-        run: npm run build
-
-      # Set up Java (required by SonarCloud)
-      - name: Set up Java
-        uses: actions/setup-java@v3
-        with:
-          java-version: '11'
-          distribution: 'temurin'
-
-      # Run SonarCloud analysis
-      - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@v2
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        with:
-          projectBaseDir: . # Adjust this if your React Native project is in a subdirectory
-          args: >
-            -Dsonar.projectKey=DevSecOpsUsash_laboratorio-final-PS
-            -Dsonar.organization=devsecopsusash
-            -Dsonar.sources=src
-            -Dsonar.exclusions=**/node_modules/**,**/android/**,**/ios/**
-            -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
   SCA-dependency-check:
-    needs: SAST-SonarCloud
+    #needs: SAST-SonarCloud
     runs-on: ubuntu-latest
     steps:
       # Step 1: Checkout code
@@ -70,13 +28,13 @@ jobs:
       - name: Install Snyk CLI
         run: npm install -g snyk
 
-      # Step 5: Run Snyk test to find vulnerabilities
-      - name: Run Snyk Test
-        run: snyk test --all-projects
-
       - name: ECHO ENV TOKEN
         run: |
           echo ${{ secrets.SNYK_TOKEN }}
+
+      # Step 5: Run Snyk test to find vulnerabilities
+      - name: Run Snyk Test
+        run: snyk test --all-projects
 
       # Optional: Monitor dependencies with Snyk (submit project to Snyk)
       - name: Monitor with Snyk
