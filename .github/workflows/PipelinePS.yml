@@ -45,3 +45,9 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           projectBaseDir: . # Adjust this if your React Native project is in a subdirectory
+          args: >
+            -Dsonar.projectKey=devsecopsusash
+            -Dsonar.organization=DevSecOpsUsash
+            -Dsonar.sources=src
+            -Dsonar.exclusions=**/node_modules/**,**/android/**,**/ios/**
+            -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
