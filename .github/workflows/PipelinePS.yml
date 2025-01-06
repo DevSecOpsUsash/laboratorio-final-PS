@@ -44,7 +44,7 @@ jobs:
           projectBaseDir: . # Adjust this if your React Native project is in a subdirectory
           args: >
             -Dsonar.projectKey=DevSecOpsUsash_laboratorio-final-PS
-            -Dsonar.organization=laboratorio-final-PS
+            -Dsonar.organization=DevSecOpsUsash
             -Dsonar.sources=src
             -Dsonar.exclusions=**/node_modules/**,**/android/**,**/ios/**
             -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
