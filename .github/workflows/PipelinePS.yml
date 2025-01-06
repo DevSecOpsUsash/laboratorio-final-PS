@@ -41,12 +41,3 @@ jobs:
         run: snyk monitor
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-
-      # Optional: Fail the build if vulnerabilities are found
-      - name: Fail the build if vulnerabilities are found
-        run: |
-          if snyk test --all-projects --json | jq '.vulnerabilities | length' | grep -q '0'; then
-            echo "No vulnerabilities found. CODE 0"
-          else
-            echo "Vulnerabilities found. CODE 1"
-          fi
