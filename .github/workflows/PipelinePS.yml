@@ -10,6 +10,43 @@ jobs:
     #needs: SAST-SonarCloud
     runs-on: ubuntu-latest
     steps:
-      - name: ECHO ENV TOKEN
+      # Step 1: Checkout code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js for React Native
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      # Step 3: Install project dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Step 4: Install Snyk CLI
+      - name: Install Snyk CLI
+        run: npm install -g snyk
+
+      # Step 5: Authenticate with Snyk using the token from GitHub Secrets
+      - name: Authenticate with Snyk
+        run: snyk auth ${{ secrets.SNYK_TOKEN }}
+
+      # Step 6: Run Snyk test to check for vulnerabilities
+      - name: Run Snyk Test
+        run: snyk test --all-projects
+
+      # Optional: Monitor dependencies with Snyk (submit project to Snyk)
+      - name: Monitor with Snyk
+        run: snyk monitor
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+
+      # Optional: Fail the build if vulnerabilities are found
+      - name: Fail the build if vulnerabilities are found
         run: |
-          echo ${{ secrets.SNYK_TOKEN }}
+          if snyk test --all-projects --json | jq '.vulnerabilities | length' | grep -q '0'; then
+            echo "No vulnerabilities found."
+          else
+            exit 1
+          fi
