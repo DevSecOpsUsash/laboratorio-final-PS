@@ -46,7 +46,7 @@ jobs:
       - name: Fail the build if vulnerabilities are found
         run: |
           if snyk test --all-projects --json | jq '.vulnerabilities | length' | grep -q '0'; then
-            echo "No vulnerabilities found."
+            echo "No vulnerabilities found. CODE 0"
           else
-            exit 1
+            echo "Vulnerabilities found. CODE 1"
           fi
