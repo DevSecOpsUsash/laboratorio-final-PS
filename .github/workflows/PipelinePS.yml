@@ -3,7 +3,7 @@ name: DevSecOps-FinalLab
 on:
   push:
     branches:
-      - main
+      - feature-finalLab
 
 jobs:
   SAST-SonarCloud:
@@ -43,13 +43,13 @@ jobs:
         with:
           projectBaseDir: . # Adjust this if your React Native project is in a subdirectory
           args: >
-            -Dsonar.projectKey=DevSecOpsUsash_laboratorio-final-PS
-            -Dsonar.organization=devsecopsusash
+            -Dsonar.projectKey=${{ secrets.SONAR_PROJECTKEY }}
+            -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }}
             -Dsonar.sources=src
             -Dsonar.exclusions=**/node_modules/**,**/android/**,**/ios/**
             -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
 
-  SCA-dependency-check-SNYK:
+  SCA-SNYK:
     needs: SAST-SonarCloud
     runs-on: ubuntu-latest
     steps:
@@ -96,7 +96,7 @@ jobs:
           fi
 
   Docker-build:
-    needs: SCA-dependency-check-SNYK
+    needs: SCA-SNYK
     runs-on: ubuntu-latest
     steps:
       # Step 1: Checkout the code
