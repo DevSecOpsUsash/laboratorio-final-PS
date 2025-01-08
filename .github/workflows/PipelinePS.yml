@@ -145,3 +145,15 @@ jobs:
           format: table
           severity: HIGH,CRITICAL
         continue-on-error: true
+  Deploy:
+    name: Deploy to AWS EC2
+    needs: Trivy-scan-docker-image
+    uses: appleboy/ssh-action@v1.2.0
+    with:
+      host: ${{ secrets.EC2_HOST }}
+      username: ${{ secrets.EC2_USERNAME }}
+      key: ${{ secrets.EC2_KEY }}
+      port: ${{ secrets.EC2_PORT }}
+      script: |
+        docker pull ${{ secrets.DOCKER_USERNAME }}/devsecops-finallab:latest
+        docker run  -p 8080:8080 -d ${{ secrets.DOCKER_USERNAME }}/devsecops-finallab:latest
