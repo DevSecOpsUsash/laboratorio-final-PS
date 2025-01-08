@@ -160,17 +160,14 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.EC2_KEY }}
 
-      # Step 3: Deploy Docker Image on EC2
-      - name: Deploy Docker Image
-        run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
-          # Pull the Docker image
-          docker pull ${{ secrets.DOCKER_USERNAME }}/devsecops-finallab:latest
-
-          # Stop the running container (if any)
-          docker stop app || true
-          docker rm app || true
-
-          # Run the container
-          docker run -d --name app -p 80:80 ${{ secrets.DOCKER_USERNAME }}/devsecops-finallab:latest
-          EOF
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@v0.1.6
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_KEY }}
+          script: |
+            docker pull ${{ secrets.DOCKER_USERNAME }}/devsecops-finallab:latest
+            docker stop app || true
+            docker rm app || true
+            docker run -d --name app -p 8080:8080 ${{ secrets.DOCKER_USERNAME }}/devsecops-finallab:latest
