@@ -145,15 +145,32 @@ jobs:
           format: table
           severity: HIGH,CRITICAL
         continue-on-error: true
-  Deploy:
+  Deploy-to-AWS-EC2:
     name: Deploy to AWS EC2
     needs: Trivy-scan-docker-image
-    uses: appleboy/ssh-action@v1.2.0
-    with:
-      host: ${{ secrets.EC2_HOST }}
-      username: ${{ secrets.EC2_USERNAME }}
-      key: ${{ secrets.EC2_KEY }}
-      port: ${{ secrets.EC2_PORT }}
-      script: |
-        docker pull ${{ secrets.DOCKER_USERNAME }}/devsecops-finallab:latest
-        docker run  -p 8080:8080 -d ${{ secrets.DOCKER_USERNAME }}/devsecops-finallab:latest
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up SSH agent
+      - name: Set up SSH agent
+        uses: webfactory/ssh-agent@v0.8.1
+        with:
+          ssh-private-key: ${{ secrets.EC2_KEY }}
+
+      # Step 3: Deploy Docker Image on EC2
+      - name: Deploy Docker Image
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
+          # Pull the Docker image
+          docker pull ${{ secrets.DOCKER_USERNAME }}/devsecops-finallab:latest
+
+          # Stop the running container (if any)
+          docker stop app || true
+          docker rm app || true
+
+          # Run the container
+          docker run -d --name app -p 80:80 ${{ secrets.DOCKER_USERNAME }}/devsecops-finallab:latest
+          EOF
