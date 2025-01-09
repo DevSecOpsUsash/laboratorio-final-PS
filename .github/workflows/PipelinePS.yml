@@ -168,6 +168,6 @@ jobs:
           key: ${{ secrets.EC2_KEY }}
           script: |
             docker pull ${{ secrets.DOCKER_USERNAME }}/devsecops-finallab:latest
-            docker stop devsecops-container || true
-            docker rm devsecops-container || true
-            docker run -d --name devsecops-container -p 80:80 ${{ secrets.DOCKER_USERNAME }}/devsecops-finallab:latest
+            docker stop ${{ secrets.DOCKER_USERNAME }}/devsecops-finallab:latest || true
+            docker rm ${{ secrets.DOCKER_USERNAME }}/devsecops-finallab:latest || true
+            docker run -d -p 3000:80 ${{ secrets.DOCKER_USERNAME }}/devsecops-finallab:latest
