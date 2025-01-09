@@ -167,7 +167,7 @@ jobs:
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.EC2_KEY }}
           script: |
-            docker pull ${{ secrets.DOCKER_USERNAME }}/devsecops-finallab:latest
-            docker stop ${{ secrets.DOCKER_USERNAME }}/devsecops-finallab:latest || true
-            docker rm ${{ secrets.DOCKER_USERNAME }}/devsecops-finallab:latest || true
-            docker run -d -p 3000:80 ${{ secrets.DOCKER_USERNAME }}/devsecops-finallab:latest
+            docker pull pablostuardo/devsecops-finallab:latest
+            docker stop pablostuardo/devsecops-finallab:latest || true
+            docker rm pablostuardo/devsecops-finallab:latest || true
+            docker run -d -p 3000:80 pablostuardo/devsecops-finallab:latest
