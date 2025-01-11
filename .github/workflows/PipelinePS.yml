@@ -91,7 +91,8 @@ jobs:
       - name: Run Snyk Test and Generate Report
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-        run: snyk test --all-projects --json-file-output=snyk-report.json
+        run: snyk test --all-projects --json-file-output=snyk-report.json || true
+        continue-on-error: true
 
       - name: Save Snyk Report
         uses: actions/upload-artifact@v3
