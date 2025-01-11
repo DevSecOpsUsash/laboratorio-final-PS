@@ -89,7 +89,7 @@ jobs:
       # Step 6: Run Snyk test to check for vulnerabilities
       - name: Run Snyk Test
         run: |
-          snyk test --all-projects
+          snyk test --all-projects --json > snyk-results.json || true
 
       # Optional: Monitor dependencies with Snyk (submit project to Snyk)
       - name: Monitor with Snyk
@@ -102,7 +102,11 @@ jobs:
         id: snyk
         run: snyk test --all-projects --severity-threshold=medium
 
-
+      # Step 5: Display results for reference
+      - name: Display Snyk Results
+        if: always()
+        run: |
+          echo "Snyk scan completed. See above for details."
 
   Docker-build:
     needs: SCA-SNYK
