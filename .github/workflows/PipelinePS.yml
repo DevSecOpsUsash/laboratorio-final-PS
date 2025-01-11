@@ -53,11 +53,11 @@ jobs:
       # Check SonarCloud for High-Severity Issues
       - name: Check for High-Severity Issues
         run: |
-          response=$(curl -u "$SONAR_TOKEN:" "https://sonarcloud.io/api/issues/search?componentKeys=${{ secrets.SONAR_PROJECTKEY }}&severities=CRITICAL,BLOCKER&statuses=OPEN")
+          response=$(curl -u "$SONAR_TOKEN:" "https://sonarcloud.io/api/issues/search?componentKeys=${{ secrets.SONAR_PROJECTKEY }}&severities=MINOR,MAJOR&statuses=OPEN")
           count=$(echo "$response" | jq '.total')
-          echo "Found $count critical or blocker issues."
+          echo "Found $count medium-severity (MAJOR) OR medium-severity (MINOR) issues."
           if [ "$count" -gt 0 ]; then
-            echo "Pipeline failed due to high-severity issues."
+            echo "Pipeline failed due to medium-severity OR medium-severity issues."
             exit 1
           fi
         env:
