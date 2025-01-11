@@ -55,9 +55,9 @@ jobs:
         run: |
           response=$(curl -u "$SONAR_TOKEN:" "https://sonarcloud.io/api/issues/search?componentKeys=${{ secrets.SONAR_PROJECTKEY }}&severities=MINOR,MAJOR&statuses=OPEN")
           count=$(echo "$response" | jq '.total')
-          echo "Found $count medium-severity (MAJOR) OR medium-severity (MINOR) issues."
+          echo "Found $count medium-severity (MAJOR) OR low-severity (MINOR) issues."
           if [ "$count" -gt 0 ]; then
-            echo "Pipeline failed due to medium-severity OR medium-severity issues."
+            echo "Pipeline failed due to medium-severity OR low-severity issues."
             exit 1
           fi
         env:
