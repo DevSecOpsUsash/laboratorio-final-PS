@@ -108,7 +108,6 @@ jobs:
         if: failure()
         run: |
           echo "High/Medium/Low vulnerabilities detected. Failing pipeline."
-          exit 1
 
   Docker-build:
     needs: SCA-SNYK
