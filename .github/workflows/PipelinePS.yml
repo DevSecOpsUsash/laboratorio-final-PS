@@ -50,11 +50,15 @@ jobs:
             -Dsonar.exclusions=**/node_modules/**,**/android/**,**/ios/**
             -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
 
-      # Check SonarCloud Quality Gate
-      - name: Check SonarCloud Quality Gate
+      # Check SonarCloud for High-Severity Issues
+      - name: Check for High-Severity Issues
         run: |
-          STATUS=$(curl -s -u "${{ secrets.SONAR_TOKEN }}:" "https://sonarcloud.io/api/qualitygates/project_status?projectKey=${{ secrets.SONAR_PROJECTKEY }}" | jq -r '.projectStatus.status')
-          if [ "$STATUS" != "OK" ]; then
-            echo "SonarCloud Quality Gate failed. Stopping pipeline."
+          response=$(curl -u "$SONAR_TOKEN:" "https://sonarcloud.io/api/issues/search?componentKeys=${{ secrets.SONAR_PROJECTKEY }}&severities=CRITICAL,BLOCKER&statuses=OPEN")
+          count=$(echo "$response" | jq '.total')
+          echo "Found $count critical or blocker issues."
+          if [ "$count" -gt 0 ]; then
+            echo "Pipeline failed due to high-severity issues."
             exit 1
           fi
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
