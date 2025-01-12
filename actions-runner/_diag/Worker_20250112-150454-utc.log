@@ -4010,3 +4010,1600 @@
 [2025-01-12 15:08:25Z INFO ProcessInvokerWrapper] Waiting for process exit or 2.5 seconds after SIGTERM signal fired.
 [2025-01-12 15:08:28Z INFO ProcessInvokerWrapper] Process did not honor SIGTERM signal within 2.5 seconds.
 [2025-01-12 15:08:28Z INFO ProcessInvokerWrapper] Kill entire process tree since both cancel and terminate signal has been ignored by the target process.
+[2025-01-12 15:08:30Z INFO ProcessInvokerWrapper] Process Cancellation finished.
+[2025-01-12 15:08:30Z INFO ProcessInvokerWrapper] Finished process 21831 with exit code 143, and elapsed time 00:03:12.7553433.
+[2025-01-12 15:08:30Z INFO CreateStepSummaryCommand] Step Summary file (/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_temp/_runner_file_commands/step_summary_1d28059a-4d2a-4307-b93e-0b5bd72ad5ca) is empty; skipping attachment upload
+[2025-01-12 15:08:30Z ERR  StepsRunner] Caught cancellation exception from step: System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at GitHub.Runner.Sdk.ProcessInvoker.ExecuteAsync(String workingDirectory, String fileName, String arguments, IDictionary`2 environment, Boolean requireExitCodeZero, Encoding outputEncoding, Boolean killProcessOnCancel, Channel`1 redirectStandardIn, Boolean inheritConsoleHandler, Boolean keepStandardInOpen, Boolean highPriorityProcess, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.ProcessInvokerWrapper.ExecuteAsync(String workingDirectory, String fileName, String arguments, IDictionary`2 environment, Boolean requireExitCodeZero, Encoding outputEncoding, Boolean killProcessOnCancel, Channel`1 redirectStandardIn, Boolean inheritConsoleHandler, Boolean keepStandardInOpen, Boolean highPriorityProcess, CancellationToken cancellationToken)
+   at GitHub.Runner.Worker.Handlers.DefaultStepHost.ExecuteAsync(IExecutionContext context, String workingDirectory, String fileName, String arguments, IDictionary`2 environment, Boolean requireExitCodeZero, Encoding outputEncoding, Boolean killProcessOnCancel, Boolean inheritConsoleHandler, String standardInInput, CancellationToken cancellationToken)
+   at GitHub.Runner.Worker.Handlers.ScriptHandler.RunAsync(ActionRunStage stage)
+   at GitHub.Runner.Worker.ActionRunner.RunAsync()
+   at GitHub.Runner.Worker.StepsRunner.RunStepAsync(IStep step, CancellationToken jobCancellationToken)
+[2025-01-12 15:08:30Z INFO StepsRunner] Step result: Canceled
+[2025-01-12 15:08:30Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "sh",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "574ef2c7-4427-5064-3a60-c56c9d47a4ca",
+  "stepContextName": "__run",
+  "result": "canceled",
+  "errorMessages": [
+    "The operation was canceled."
+  ],
+  "executionTimeInSeconds": 193,
+  "startTime": "2025-01-12T15:05:17.919695Z",
+  "finishTime": "2025-01-12T15:08:30.882763Z"
+}.
+[2025-01-12 15:08:30Z INFO StepsRunner] No need for updating job result with current step result 'Canceled'.
+[2025-01-12 15:08:30Z INFO StepsRunner] Current state: job state = 'Canceled'
+[2025-01-12 15:08:30Z INFO StepsRunner] Processing step: DisplayName='Run Next.js App in Docker'
+[2025-01-12 15:08:30Z INFO StepsRunner] Evaluating: success()
+[2025-01-12 15:08:30Z INFO StepsRunner] Result: false
+[2025-01-12 15:08:30Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-01-12 15:08:30Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-01-12 15:08:30Z INFO StepsRunner] Current state: job state = 'Canceled'
+[2025-01-12 15:08:30Z INFO StepsRunner] Processing step: DisplayName='Run Tests'
+[2025-01-12 15:08:30Z INFO StepsRunner] Evaluating: success()
+[2025-01-12 15:08:30Z INFO StepsRunner] Result: false
+[2025-01-12 15:08:30Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-01-12 15:08:30Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-01-12 15:08:30Z INFO StepsRunner] Current state: job state = 'Canceled'
+[2025-01-12 15:08:30Z INFO StepsRunner] Processing step: DisplayName='Post Log in to Docker Hub'
+[2025-01-12 15:08:30Z INFO StepsRunner] Evaluating: always()
+[2025-01-12 15:08:30Z INFO StepsRunner] Result: true
+[2025-01-12 15:08:30Z INFO StepsRunner] Starting the step.
+[2025-01-12 15:08:30Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:30Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:30Z INFO HostContext] Well known directory 'Work': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work'
+[2025-01-12 15:08:30Z INFO HostContext] Well known directory 'Actions': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_actions'
+[2025-01-12 15:08:30Z INFO ActionManager] Load action that reference repository from '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_actions/docker/login-action/v2'
+[2025-01-12 15:08:30Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:30Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:30Z INFO HostContext] Well known directory 'Work': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work'
+[2025-01-12 15:08:30Z INFO HostContext] Well known directory 'Actions': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_actions'
+[2025-01-12 15:08:30Z INFO ActionManifestManager] Ignore action property author.
+[2025-01-12 15:08:30Z INFO ActionManifestManager] Ignore action property branding.
+[2025-01-12 15:08:30Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Docker Login",
+  "description": "GitHub Action to login against a Docker registry",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 10,
+          "col": 3,
+          "lit": "registry"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 13,
+          "col": 3,
+          "lit": "username"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 16,
+          "col": 3,
+          "lit": "password"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 19,
+          "col": 3,
+          "lit": "ecr"
+        },
+        "value": {
+          "type": 0,
+          "file": 4,
+          "line": 21,
+          "col": 14,
+          "lit": "auto"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 23,
+          "col": 3,
+          "lit": "logout"
+        },
+        "value": {
+          "type": 0,
+          "file": 4,
+          "line": 25,
+          "col": 14,
+          "lit": "true"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-01-12 15:08:30Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-01-12 15:08:30Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-01-12 15:08:30Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-01-12 15:08:30Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:30Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:30Z INFO HostContext] Well known directory 'Work': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work'
+[2025-01-12 15:08:30Z INFO HostContext] Well known directory 'Temp': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_temp'
+[2025-01-12 15:08:30Z INFO ExecutionContext] Write event payload to /Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_temp/_github_workflow/event.json
+[2025-01-12 15:08:30Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:30Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:30Z INFO HostContext] Well known directory 'Work': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work'
+[2025-01-12 15:08:30Z INFO HostContext] Well known directory 'Temp': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_temp'
+[2025-01-12 15:08:30Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-01-12 15:08:30Z INFO ActionManifestManager] Input 'registry': default value evaluate result: ""
+[2025-01-12 15:08:30Z INFO ActionManifestManager] Input 'ecr': default value evaluate result: {
+  "type": 0,
+  "file": 4,
+  "line": 21,
+  "col": 14,
+  "lit": "auto"
+}
+[2025-01-12 15:08:30Z INFO ActionManifestManager] Input 'logout': default value evaluate result: {
+  "type": 0,
+  "file": 4,
+  "line": 25,
+  "col": 14,
+  "lit": "true"
+}
+[2025-01-12 15:08:30Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-01-12 15:08:30Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-01-12 15:08:30Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-01-12 15:08:30Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-01-12 15:08:30Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-01-12 15:08:30Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-01-12 15:08:30Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-01-12 15:08:30Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-01-12 15:08:30Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-01-12 15:08:30Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-01-12 15:08:30Z INFO ActionCommandManager] Register action command extension for command error
+[2025-01-12 15:08:30Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-01-12 15:08:30Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-01-12 15:08:30Z INFO ActionCommandManager] Register action command extension for command group
+[2025-01-12 15:08:30Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-01-12 15:08:30Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-01-12 15:08:30Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:30Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:30Z INFO HostContext] Well known directory 'Externals': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/externals'
+[2025-01-12 15:08:30Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:30Z INFO ProcessInvokerWrapper]   File name: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/externals/node20/bin/node'
+[2025-01-12 15:08:30Z INFO ProcessInvokerWrapper]   Arguments: '"/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_actions/docker/login-action/v2/dist/index.js"'
+[2025-01-12 15:08:30Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/laboratorio-final-PS/laboratorio-final-PS'
+[2025-01-12 15:08:30Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:30Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:30Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:30Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:30Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:30Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:30Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:30Z INFO ProcessInvokerWrapper] Process started with process id 26274, waiting for process exit.
+[2025-01-12 15:08:31Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:31Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:31Z INFO HostContext] Well known directory 'Work': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work'
+[2025-01-12 15:08:31Z INFO JobServerQueue] Try to append 1 batches web console lines for record '574ef2c7-4427-5064-3a60-c56c9d47a4ca', success rate: 1/1.
+[2025-01-12 15:08:31Z INFO JobServerQueue] Try to append 1 batches web console lines for record '41933ff2-ced4-4e44-bb10-3d546af68afa', success rate: 1/1.
+[2025-01-12 15:08:31Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-01-12 15:08:31Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_diag/blocks/cc31df43-0966-4906-870c-685c0ed022ea_574ef2c7-4427-5064-3a60-c56c9d47a4ca.1
+[2025-01-12 15:08:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:31Z INFO ProcessInvokerWrapper] Finished process 26274 with exit code 0, and elapsed time 00:00:00.3616269.
+[2025-01-12 15:08:31Z INFO CreateStepSummaryCommand] Step Summary file (/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_temp/_runner_file_commands/step_summary_193283de-6dce-429e-91bf-81ac5f9ca4f1) is empty; skipping attachment upload
+[2025-01-12 15:08:31Z INFO StepsRunner] Step result: 
+[2025-01-12 15:08:31Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "docker/login-action",
+  "ref": "v2",
+  "type": "node20",
+  "stage": "Post",
+  "stepId": "41933ff2-ced4-4e44-bb10-3d546af68afa",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-01-12T15:08:30.888107Z",
+  "finishTime": "2025-01-12T15:08:31.266738Z"
+}.
+[2025-01-12 15:08:31Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-01-12 15:08:31Z INFO StepsRunner] Current state: job state = 'Canceled'
+[2025-01-12 15:08:31Z INFO StepsRunner] Processing step: DisplayName='Post Set up Docker Buildx'
+[2025-01-12 15:08:31Z INFO StepsRunner] Evaluating: always()
+[2025-01-12 15:08:31Z INFO StepsRunner] Result: true
+[2025-01-12 15:08:31Z INFO StepsRunner] Starting the step.
+[2025-01-12 15:08:31Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:31Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:31Z INFO HostContext] Well known directory 'Work': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work'
+[2025-01-12 15:08:31Z INFO HostContext] Well known directory 'Actions': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_actions'
+[2025-01-12 15:08:31Z INFO ActionManager] Load action that reference repository from '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_actions/docker/setup-buildx-action/v2'
+[2025-01-12 15:08:31Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:31Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:31Z INFO HostContext] Well known directory 'Work': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work'
+[2025-01-12 15:08:31Z INFO HostContext] Well known directory 'Actions': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_actions'
+[2025-01-12 15:08:31Z INFO ActionManifestManager] Ignore action property author.
+[2025-01-12 15:08:31Z INFO ActionManifestManager] Ignore action property branding.
+[2025-01-12 15:08:31Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Docker Setup Buildx",
+  "description": "Set up Docker Buildx",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 10,
+          "col": 3,
+          "lit": "version"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 13,
+          "col": 3,
+          "lit": "driver"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 15,
+          "col": 14,
+          "lit": "docker-container"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 17,
+          "col": 3,
+          "lit": "driver-opts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 20,
+          "col": 3,
+          "lit": "buildkitd-flags"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 22,
+          "col": 14,
+          "lit": "--allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 24,
+          "col": 3,
+          "lit": "install"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 26,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 28,
+          "col": 3,
+          "lit": "use"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 30,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 32,
+          "col": 3,
+          "lit": "endpoint"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 35,
+          "col": 3,
+          "lit": "platforms"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 38,
+          "col": 3,
+          "lit": "config"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 41,
+          "col": 3,
+          "lit": "config-inline"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 44,
+          "col": 3,
+          "lit": "append"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 47,
+          "col": 3,
+          "lit": "cleanup"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 49,
+          "col": 14,
+          "lit": "true"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-01-12 15:08:31Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-01-12 15:08:31Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-01-12 15:08:31Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-01-12 15:08:31Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:31Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:31Z INFO HostContext] Well known directory 'Work': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work'
+[2025-01-12 15:08:31Z INFO HostContext] Well known directory 'Temp': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_temp'
+[2025-01-12 15:08:31Z INFO ExecutionContext] Write event payload to /Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_temp/_github_workflow/event.json
+[2025-01-12 15:08:31Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:31Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:31Z INFO HostContext] Well known directory 'Work': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work'
+[2025-01-12 15:08:31Z INFO HostContext] Well known directory 'Temp': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_temp'
+[2025-01-12 15:08:31Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-01-12 15:08:31Z INFO ActionManifestManager] Input 'version': default value evaluate result: ""
+[2025-01-12 15:08:31Z INFO ActionManifestManager] Input 'driver': default value evaluate result: {
+  "type": 0,
+  "file": 3,
+  "line": 15,
+  "col": 14,
+  "lit": "docker-container"
+}
+[2025-01-12 15:08:31Z INFO ActionManifestManager] Input 'driver-opts': default value evaluate result: ""
+[2025-01-12 15:08:31Z INFO ActionManifestManager] Input 'buildkitd-flags': default value evaluate result: {
+  "type": 0,
+  "file": 3,
+  "line": 22,
+  "col": 14,
+  "lit": "--allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host"
+}
+[2025-01-12 15:08:31Z INFO ActionManifestManager] Input 'install': default value evaluate result: {
+  "type": 0,
+  "file": 3,
+  "line": 26,
+  "col": 14,
+  "lit": "false"
+}
+[2025-01-12 15:08:31Z INFO ActionManifestManager] Input 'use': default value evaluate result: {
+  "type": 0,
+  "file": 3,
+  "line": 30,
+  "col": 14,
+  "lit": "true"
+}
+[2025-01-12 15:08:31Z INFO ActionManifestManager] Input 'endpoint': default value evaluate result: ""
+[2025-01-12 15:08:31Z INFO ActionManifestManager] Input 'platforms': default value evaluate result: ""
+[2025-01-12 15:08:31Z INFO ActionManifestManager] Input 'config': default value evaluate result: ""
+[2025-01-12 15:08:31Z INFO ActionManifestManager] Input 'config-inline': default value evaluate result: ""
+[2025-01-12 15:08:31Z INFO ActionManifestManager] Input 'append': default value evaluate result: ""
+[2025-01-12 15:08:31Z INFO ActionManifestManager] Input 'cleanup': default value evaluate result: {
+  "type": 0,
+  "file": 3,
+  "line": 49,
+  "col": 14,
+  "lit": "true"
+}
+[2025-01-12 15:08:31Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-01-12 15:08:31Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-01-12 15:08:31Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-01-12 15:08:31Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-01-12 15:08:31Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-01-12 15:08:31Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-01-12 15:08:31Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-01-12 15:08:31Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-01-12 15:08:31Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-01-12 15:08:31Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-01-12 15:08:31Z INFO ActionCommandManager] Register action command extension for command error
+[2025-01-12 15:08:31Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-01-12 15:08:31Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-01-12 15:08:31Z INFO ActionCommandManager] Register action command extension for command group
+[2025-01-12 15:08:31Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-01-12 15:08:31Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-01-12 15:08:31Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:31Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:31Z INFO HostContext] Well known directory 'Externals': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/externals'
+[2025-01-12 15:08:31Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:31Z INFO ProcessInvokerWrapper]   File name: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/externals/node20/bin/node'
+[2025-01-12 15:08:31Z INFO ProcessInvokerWrapper]   Arguments: '"/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_actions/docker/setup-buildx-action/v2/dist/index.js"'
+[2025-01-12 15:08:31Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/laboratorio-final-PS/laboratorio-final-PS'
+[2025-01-12 15:08:31Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:31Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:31Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:31Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:31Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:31Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:31Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:31Z INFO ProcessInvokerWrapper] Process started with process id 26278, waiting for process exit.
+[2025-01-12 15:08:31Z INFO JobServerQueue] Try to append 1 batches web console lines for record '41933ff2-ced4-4e44-bb10-3d546af68afa', success rate: 1/1.
+[2025-01-12 15:08:31Z INFO JobServerQueue] Try to append 1 batches web console lines for record '26997141-c248-4a09-849b-74127f3a0d49', success rate: 1/1.
+[2025-01-12 15:08:31Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26278 with exit code 0, and elapsed time 00:00:00.7399829.
+[2025-01-12 15:08:32Z INFO CreateStepSummaryCommand] Step Summary file (/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_temp/_runner_file_commands/step_summary_2deda662-026e-4fd4-9eee-e62819c9a507) is empty; skipping attachment upload
+[2025-01-12 15:08:32Z INFO StepsRunner] Step result: 
+[2025-01-12 15:08:32Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "docker/setup-buildx-action",
+  "ref": "v2",
+  "type": "node20",
+  "stage": "Post",
+  "stepId": "26997141-c248-4a09-849b-74127f3a0d49",
+  "result": "succeeded",
+  "errorMessages": [
+    "ERROR: open /Users/***/.docker/buildx/refs: permission denied"
+  ],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-01-12T15:08:31.268172Z",
+  "finishTime": "2025-01-12T15:08:32.022873Z"
+}.
+[2025-01-12 15:08:32Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-01-12 15:08:32Z INFO StepsRunner] Current state: job state = 'Canceled'
+[2025-01-12 15:08:32Z INFO StepsRunner] Processing step: DisplayName='Post Checkout code'
+[2025-01-12 15:08:32Z INFO StepsRunner] Evaluating: always()
+[2025-01-12 15:08:32Z INFO StepsRunner] Result: true
+[2025-01-12 15:08:32Z INFO StepsRunner] Starting the step.
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Work': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Actions': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_actions'
+[2025-01-12 15:08:32Z INFO ActionManager] Load action that reference repository from '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_actions/actions/checkout/v3'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Work': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Actions': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_actions'
+[2025-01-12 15:08:32Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 67,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 68,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-01-12 15:08:32Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-01-12 15:08:32Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-01-12 15:08:32Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Work': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Temp': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_temp'
+[2025-01-12 15:08:32Z INFO ExecutionContext] Write event payload to /Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_temp/_github_workflow/event.json
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Work': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Temp': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_temp'
+[2025-01-12 15:08:32Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-01-12 15:08:32Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "DevSecOpsUsash/laboratorio-final-PS"
+}
+[2025-01-12 15:08:32Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2025-01-12 15:08:32Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2025-01-12 15:08:32Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2025-01-12 15:08:32Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2025-01-12 15:08:32Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2025-01-12 15:08:32Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2025-01-12 15:08:32Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2025-01-12 15:08:32Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2025-01-12 15:08:32Z INFO ActionManifestManager] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 60,
+  "col": 14,
+  "lit": ""
+}
+[2025-01-12 15:08:32Z INFO ActionManifestManager] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": "true"
+}
+[2025-01-12 15:08:32Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 67,
+  "col": 14,
+  "lit": "1"
+}
+[2025-01-12 15:08:32Z INFO ActionManifestManager] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2025-01-12 15:08:32Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "false"
+}
+[2025-01-12 15:08:32Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "false"
+}
+[2025-01-12 15:08:32Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "true"
+}
+[2025-01-12 15:08:32Z INFO ActionManifestManager] Input 'github-server-url': default value evaluate result: ""
+[2025-01-12 15:08:32Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-01-12 15:08:32Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-01-12 15:08:32Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-01-12 15:08:32Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-01-12 15:08:32Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-01-12 15:08:32Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-01-12 15:08:32Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-01-12 15:08:32Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-01-12 15:08:32Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-01-12 15:08:32Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-01-12 15:08:32Z INFO ActionCommandManager] Register action command extension for command error
+[2025-01-12 15:08:32Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-01-12 15:08:32Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-01-12 15:08:32Z INFO ActionCommandManager] Register action command extension for command group
+[2025-01-12 15:08:32Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-01-12 15:08:32Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Externals': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/externals'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/externals/node20/bin/node'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: '"/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_actions/actions/checkout/v3/dist/index.js"'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/laboratorio-final-PS/laboratorio-final-PS'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Process started with process id 26333, waiting for process exit.
+[2025-01-12 15:08:32Z INFO JobServerQueue] Try to append 1 batches web console lines for record '26997141-c248-4a09-849b-74127f3a0d49', success rate: 1/1.
+[2025-01-12 15:08:32Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e1d42d58-f20f-4ca0-9dbd-be5e96af1abf', success rate: 1/1.
+[2025-01-12 15:08:32Z INFO AddMaskCommandExtension] Add new secret mask with length of 32
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26333 with exit code 0, and elapsed time 00:00:00.3530942.
+[2025-01-12 15:08:32Z INFO CreateStepSummaryCommand] Step Summary file (/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_temp/_runner_file_commands/step_summary_413b88cf-2e29-465d-9826-7b4f79a164a5) is empty; skipping attachment upload
+[2025-01-12 15:08:32Z INFO StepsRunner] Step result: 
+[2025-01-12 15:08:32Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v3",
+  "type": "node20",
+  "stage": "Post",
+  "stepId": "e1d42d58-f20f-4ca0-9dbd-be5e96af1abf",
+  "result": "succeeded",
+  "errorMessages": [
+    "The process '/opt/homebrew/bin/git' failed with exit code 128"
+  ],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-01-12T15:08:32.024914Z",
+  "finishTime": "2025-01-12T15:08:32.396957Z"
+}.
+[2025-01-12 15:08:32Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-01-12 15:08:32Z INFO StepsRunner] Current state: job state = 'Canceled'
+[2025-01-12 15:08:32Z INFO JobRunner] Finalize job.
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Diag': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_diag'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Diag': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_diag'
+[2025-01-12 15:08:32Z INFO JobExtension] Initialize Env context
+[2025-01-12 15:08:32Z INFO JobExtension] Initialize steps context
+[2025-01-12 15:08:32Z INFO JobExtension] Total accessible running process: 329.
+[2025-01-12 15:08:32Z INFO JobExtension] Inspecting process environment variables. PID: 25961 (swcd)
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 25961 -o command`
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 25961 -o command'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Process started with process id 26372, waiting for process exit.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26372 with exit code 0, and elapsed time 00:00:00.0261865.
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Successfully dump environment variables for 25961
+[2025-01-12 15:08:32Z INFO JobExtension] Inspecting process environment variables. PID: 25915 (AXVisualSupport)
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 25915 -o command`
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 25915 -o command'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Process started with process id 26373, waiting for process exit.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26373 with exit code 0, and elapsed time 00:00:00.0226822.
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Successfully dump environment variables for 25915
+[2025-01-12 15:08:32Z INFO JobExtension] Inspecting process environment variables. PID: 25868 (mdworker_shared)
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 25868 -o command`
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 25868 -o command'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Process started with process id 26374, waiting for process exit.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26374 with exit code 0, and elapsed time 00:00:00.0225155.
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Successfully dump environment variables for 25868
+[2025-01-12 15:08:32Z INFO JobExtension] Inspecting process environment variables. PID: 25867 (mdworker_shared)
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 25867 -o command`
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 25867 -o command'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Process started with process id 26375, waiting for process exit.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26375 with exit code 0, and elapsed time 00:00:00.0222681.
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Successfully dump environment variables for 25867
+[2025-01-12 15:08:32Z INFO JobExtension] Inspecting process environment variables. PID: 25772 (Brave Browser H)
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 25772 -o command`
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 25772 -o command'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Process started with process id 26376, waiting for process exit.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26376 with exit code 0, and elapsed time 00:00:00.0209350.
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Successfully dump environment variables for 25772
+[2025-01-12 15:08:32Z INFO JobExtension] Inspecting process environment variables. PID: 25217 (mdworker_shared)
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 25217 -o command`
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 25217 -o command'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Process started with process id 26377, waiting for process exit.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26377 with exit code 0, and elapsed time 00:00:00.0207572.
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Successfully dump environment variables for 25217
+[2025-01-12 15:08:32Z INFO JobExtension] Inspecting process environment variables. PID: 25076 (mdworker_shared)
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 25076 -o command`
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 25076 -o command'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:32Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e1d42d58-f20f-4ca0-9dbd-be5e96af1abf', success rate: 1/1.
+[2025-01-12 15:08:32Z INFO JobServerQueue] Try to append 1 batches web console lines for record '39b08ace-8d10-4387-b992-71b5eaae274a', success rate: 1/1.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Process started with process id 26378, waiting for process exit.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26378 with exit code 0, and elapsed time 00:00:00.0205221.
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Successfully dump environment variables for 25076
+[2025-01-12 15:08:32Z INFO JobExtension] Inspecting process environment variables. PID: 24290 (iconservicesage)
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 24290 -o command`
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 24290 -o command'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Process started with process id 26379, waiting for process exit.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26379 with exit code 0, and elapsed time 00:00:00.0196930.
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Successfully dump environment variables for 24290
+[2025-01-12 15:08:32Z INFO JobExtension] Inspecting process environment variables. PID: 24244 (CategoriesServi)
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 24244 -o command`
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 24244 -o command'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Process started with process id 26380, waiting for process exit.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26380 with exit code 0, and elapsed time 00:00:00.0215219.
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Successfully dump environment variables for 24244
+[2025-01-12 15:08:32Z INFO JobExtension] Inspecting process environment variables. PID: 24243 (ManagedSettings)
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 24243 -o command`
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 24243 -o command'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Process started with process id 26381, waiting for process exit.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26381 with exit code 0, and elapsed time 00:00:00.0223950.
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Successfully dump environment variables for 24243
+[2025-01-12 15:08:32Z INFO JobExtension] Inspecting process environment variables. PID: 24242 (UsageTrackingAg)
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 24242 -o command`
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 24242 -o command'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Process started with process id 26382, waiting for process exit.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26382 with exit code 0, and elapsed time 00:00:00.0243995.
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Successfully dump environment variables for 24242
+[2025-01-12 15:08:32Z INFO JobExtension] Inspecting process environment variables. PID: 24236 (neagent)
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 24236 -o command`
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 24236 -o command'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Process started with process id 26383, waiting for process exit.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26383 with exit code 0, and elapsed time 00:00:00.0215469.
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Successfully dump environment variables for 24236
+[2025-01-12 15:08:32Z INFO JobExtension] Inspecting process environment variables. PID: 24182 (CoreLocationAge)
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 24182 -o command`
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 24182 -o command'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Process started with process id 26384, waiting for process exit.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26384 with exit code 0, and elapsed time 00:00:00.0217478.
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Successfully dump environment variables for 24182
+[2025-01-12 15:08:32Z INFO JobExtension] Inspecting process environment variables. PID: 24181 (com.apple.geod)
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 24181 -o command`
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 24181 -o command'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Process started with process id 26385, waiting for process exit.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26385 with exit code 0, and elapsed time 00:00:00.0214302.
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Successfully dump environment variables for 24181
+[2025-01-12 15:08:32Z INFO JobExtension] Inspecting process environment variables. PID: 24180 (syncdefaultsd)
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 24180 -o command`
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 24180 -o command'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Process started with process id 26386, waiting for process exit.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26386 with exit code 0, and elapsed time 00:00:00.0237999.
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Successfully dump environment variables for 24180
+[2025-01-12 15:08:32Z INFO JobExtension] Inspecting process environment variables. PID: 24179 (secinitd)
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 24179 -o command`
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 24179 -o command'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Process started with process id 26387, waiting for process exit.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26387 with exit code 0, and elapsed time 00:00:00.0235192.
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Successfully dump environment variables for 24179
+[2025-01-12 15:08:32Z INFO JobExtension] Inspecting process environment variables. PID: 24178 (ScreenTimeWidge)
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 24178 -o command`
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 24178 -o command'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Process started with process id 26388, waiting for process exit.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26388 with exit code 0, and elapsed time 00:00:00.0216261.
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Successfully dump environment variables for 24178
+[2025-01-12 15:08:32Z INFO JobExtension] Inspecting process environment variables. PID: 24177 (WeatherWidget)
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 24177 -o command`
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 24177 -o command'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Process started with process id 26389, waiting for process exit.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26389 with exit code 0, and elapsed time 00:00:00.0223640.
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Successfully dump environment variables for 24177
+[2025-01-12 15:08:32Z INFO JobExtension] Inspecting process environment variables. PID: 24176 (extensionkitser)
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 24176 -o command`
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 24176 -o command'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Process started with process id 26390, waiting for process exit.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26390 with exit code 0, and elapsed time 00:00:00.0210946.
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Successfully dump environment variables for 24176
+[2025-01-12 15:08:32Z INFO JobExtension] Inspecting process environment variables. PID: 23477 (SidecarRelay)
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 23477 -o command`
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 23477 -o command'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Process started with process id 26391, waiting for process exit.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26391 with exit code 0, and elapsed time 00:00:00.0223465.
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Successfully dump environment variables for 23477
+[2025-01-12 15:08:32Z INFO JobExtension] Inspecting process environment variables. PID: 23380 (intelligentrout)
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 23380 -o command`
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 23380 -o command'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Process started with process id 26392, waiting for process exit.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26392 with exit code 0, and elapsed time 00:00:00.0240666.
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Successfully dump environment variables for 23380
+[2025-01-12 15:08:32Z INFO JobExtension] Inspecting process environment variables. PID: 23015 (Brave Browser H)
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 23015 -o command`
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 23015 -o command'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Process started with process id 26393, waiting for process exit.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26393 with exit code 0, and elapsed time 00:00:00.0233810.
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Successfully dump environment variables for 23015
+[2025-01-12 15:08:32Z INFO JobExtension] Inspecting process environment variables. PID: 22918 (mdworker_shared)
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 22918 -o command`
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 22918 -o command'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Process started with process id 26394, waiting for process exit.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26394 with exit code 0, and elapsed time 00:00:00.0289467.
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Successfully dump environment variables for 22918
+[2025-01-12 15:08:32Z INFO JobExtension] Inspecting process environment variables. PID: 22917 (mdworker_shared)
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 22917 -o command`
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 22917 -o command'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Process started with process id 26395, waiting for process exit.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Finished process 26395 with exit code 0, and elapsed time 00:00:00.0245325.
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Successfully dump environment variables for 22917
+[2025-01-12 15:08:32Z INFO JobExtension] Inspecting process environment variables. PID: 22916 (mdworker_shared)
+[2025-01-12 15:08:32Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 22916 -o command`
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:32Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 22916 -o command'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper] Process started with process id 26396, waiting for process exit.
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper] Finished process 26396 with exit code 0, and elapsed time 00:00:00.0228478.
+[2025-01-12 15:08:33Z INFO LinuxProcessExtensions] Successfully dump environment variables for 22916
+[2025-01-12 15:08:33Z INFO JobExtension] Inspecting process environment variables. PID: 22802 (mdworker_shared)
+[2025-01-12 15:08:33Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 22802 -o command`
+[2025-01-12 15:08:33Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:33Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 22802 -o command'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper] Process started with process id 26397, waiting for process exit.
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper] Finished process 26397 with exit code 0, and elapsed time 00:00:00.0223395.
+[2025-01-12 15:08:33Z INFO LinuxProcessExtensions] Successfully dump environment variables for 22802
+[2025-01-12 15:08:33Z INFO JobExtension] Inspecting process environment variables. PID: 22397 (ContainerMetada)
+[2025-01-12 15:08:33Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 22397 -o command`
+[2025-01-12 15:08:33Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:33Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 22397 -o command'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper] Process started with process id 26398, waiting for process exit.
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper] Finished process 26398 with exit code 0, and elapsed time 00:00:00.0251108.
+[2025-01-12 15:08:33Z INFO LinuxProcessExtensions] Successfully dump environment variables for 22397
+[2025-01-12 15:08:33Z INFO JobExtension] Inspecting process environment variables. PID: 22394 (bird)
+[2025-01-12 15:08:33Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 22394 -o command`
+[2025-01-12 15:08:33Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:33Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 22394 -o command'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper] Process started with process id 26399, waiting for process exit.
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper] Finished process 26399 with exit code 0, and elapsed time 00:00:00.0222051.
+[2025-01-12 15:08:33Z INFO LinuxProcessExtensions] Successfully dump environment variables for 22394
+[2025-01-12 15:08:33Z INFO JobExtension] Inspecting process environment variables. PID: 21515 (replayd)
+[2025-01-12 15:08:33Z INFO LinuxProcessExtensions] Read env from output of `ps e -p 21515 -o command`
+[2025-01-12 15:08:33Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:33Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   File name: 'ps'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Arguments: 'e -p 21515 -o command'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Working directory: '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper] Process started with process id 26400, waiting for process exit.
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:08:33Z INFO ProcessInvokerWrapper] Finished process 26400 with exit code 0, and elapsed time 00:00:00.0224996.
+[2025-01-12 15:08:33Z INFO LinuxProcessExtensions] Successfully dump environment variables for 21515
+[2025-01-12 15:08:33Z INFO JobExtension] Wait for all connectivity checks to finish.
+[2025-01-12 15:08:33Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2025-01-12 15:08:33Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2025-01-12 15:08:33Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2025-01-12 15:08:33Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2025-01-12 15:08:33Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2025-01-12 15:08:33Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "complete_job",
+  "type": "runner",
+  "stage": "Post",
+  "stepId": "39b08ace-8d10-4387-b992-71b5eaae274a",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-01-12T15:08:32.404444Z",
+  "finishTime": "2025-01-12T15:08:33.123065Z"
+}.
+[2025-01-12 15:08:33Z INFO JobRunner] Job result after all job steps finish: Canceled
+[2025-01-12 15:08:33Z INFO JobRunner] Completing the job execution context.
+[2025-01-12 15:08:33Z INFO JobRunner] Shutting down the job server queue.
+[2025-01-12 15:08:33Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2025-01-12 15:08:33Z INFO JobServerQueue] Try to upload 3 log files or attachments, success rate: 3/3.
+[2025-01-12 15:08:34Z INFO JobServerQueue] All queue process task stopped.
+[2025-01-12 15:08:34Z INFO JobServerQueue] Web console line queue drained.
+[2025-01-12 15:08:34Z INFO JobServerQueue] Uploading 2 files in one shot.
+[2025-01-12 15:08:35Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2025-01-12 15:08:35Z INFO JobServerQueue] File upload queue drained.
+[2025-01-12 15:08:35Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-01-12 15:08:35Z INFO JobServerQueue] Uploading 5 file(s) in one shot through results service.
+[2025-01-12 15:08:35Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-01-12 15:08:35Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_diag/blocks/cc31df43-0966-4906-870c-685c0ed022ea_41933ff2-ced4-4e44-bb10-3d546af68afa.1
+[2025-01-12 15:08:36Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-01-12 15:08:36Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_diag/blocks/cc31df43-0966-4906-870c-685c0ed022ea_26997141-c248-4a09-849b-74127f3a0d49.1
+[2025-01-12 15:08:36Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-01-12 15:08:36Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_diag/blocks/cc31df43-0966-4906-870c-685c0ed022ea_e1d42d58-f20f-4ca0-9dbd-be5e96af1abf.1
+[2025-01-12 15:08:36Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-01-12 15:08:36Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_diag/blocks/cc31df43-0966-4906-870c-685c0ed022ea_39b08ace-8d10-4387-b992-71b5eaae274a.1
+[2025-01-12 15:08:37Z INFO JobServerQueue] Got a job log file to send to results service.
+[2025-01-12 15:08:37Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, /Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_diag/blocks/cc31df43-0966-4906-870c-685c0ed022ea_f0b989ea-4eca-54c3-fcdc-2f3daac7f42a.1
+[2025-01-12 15:08:38Z INFO JobServerQueue] Tried to upload 5 file(s) to results, success rate: 5/5.
+[2025-01-12 15:08:38Z INFO JobServerQueue] Results upload queue drained.
+[2025-01-12 15:08:38Z INFO JobServerQueue] Timeline update queue drained.
+[2025-01-12 15:08:38Z INFO JobServerQueue] Disposing job server ...
+[2025-01-12 15:08:38Z INFO JobServerQueue] Disposing results server ...
+[2025-01-12 15:08:38Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2025-01-12 15:08:38Z INFO JobServerQueue] Actions upload time: 4043 ms, Result upload time: 6684 ms
+[2025-01-12 15:08:38Z INFO TempDirectoryManager] Cleaning runner temp folder: /Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_work/_temp
+[2025-01-12 15:08:38Z INFO HostContext] Well known directory 'Bin': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:08:38Z INFO HostContext] Well known directory 'Root': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:08:38Z INFO HostContext] Well known directory 'Diag': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_diag'
+[2025-01-12 15:08:38Z INFO HostContext] Well known config file 'Telemetry': '/Users/***/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/_diag/.telemetry'
+[2025-01-12 15:08:38Z INFO JobRunner] Raising job completed event

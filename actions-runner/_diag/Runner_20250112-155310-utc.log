@@ -1,0 +1,168 @@
+[2025-01-12 15:53:10Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-01-12 15:53:10Z INFO HostContext] Well known directory 'Bin': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:53:10Z INFO HostContext] Well known directory 'Root': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:53:10Z INFO HostContext] Well known config file 'Credentials': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/.credentials'
+[2025-01-12 15:53:11Z INFO HostContext] Well known directory 'Bin': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:53:11Z INFO HostContext] Well known directory 'Root': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:53:11Z INFO HostContext] Well known config file 'Runner': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/.runner'
+[2025-01-12 15:53:11Z INFO Listener] Runner is built for OSX (X64) - osx-x64.
+[2025-01-12 15:53:11Z INFO Listener] RuntimeInformation: Darwin 23.3.0 Darwin Kernel Version 23.3.0: Wed Dec 20 21:30:44 PST 2023; root:xnu-10002.81.5~7/RELEASE_ARM64_T6000.
+[2025-01-12 15:53:11Z INFO Listener] Version: 2.321.0
+[2025-01-12 15:53:11Z INFO Listener] Commit: e249007931b7c8e857797fa259c167f0bd4f997a
+[2025-01-12 15:53:11Z INFO Listener] Culture: es-ES
+[2025-01-12 15:53:11Z INFO Listener] UI Culture: es-ES
+[2025-01-12 15:53:11Z INFO HostContext] Well known directory 'Bin': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:53:11Z INFO HostContext] Well known directory 'Root': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:53:11Z INFO Listener] Validating directory permissions for: '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:53:11Z INFO CommandLineParser] Parse
+[2025-01-12 15:53:11Z INFO CommandLineParser] Parsing 1 args
+[2025-01-12 15:53:11Z INFO CommandLineParser] parsing argument
+[2025-01-12 15:53:11Z INFO CommandLineParser] HasArgs: False
+[2025-01-12 15:53:11Z INFO CommandLineParser] Adding Command: run
+[2025-01-12 15:53:11Z INFO Listener] Arguments parsed
+[2025-01-12 15:53:11Z INFO Runner] ExecuteCommand
+[2025-01-12 15:53:11Z INFO ConfigurationStore] currentAssemblyLocation: /Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin/Runner.Listener.dll
+[2025-01-12 15:53:11Z INFO HostContext] Well known directory 'Bin': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:53:11Z INFO ConfigurationStore] binPath: /Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin
+[2025-01-12 15:53:11Z INFO HostContext] Well known directory 'Bin': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:53:11Z INFO HostContext] Well known directory 'Root': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:53:11Z INFO ConfigurationStore] RootFolder: /Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner
+[2025-01-12 15:53:11Z INFO HostContext] Well known directory 'Bin': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:53:11Z INFO HostContext] Well known directory 'Root': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:53:11Z INFO HostContext] Well known config file 'Runner': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/.runner'
+[2025-01-12 15:53:11Z INFO ConfigurationStore] ConfigFilePath: /Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/.runner
+[2025-01-12 15:53:11Z INFO HostContext] Well known directory 'Bin': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:53:11Z INFO HostContext] Well known directory 'Root': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:53:11Z INFO HostContext] Well known config file 'Credentials': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/.credentials'
+[2025-01-12 15:53:11Z INFO ConfigurationStore] CredFilePath: /Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/.credentials
+[2025-01-12 15:53:11Z INFO HostContext] Well known directory 'Bin': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:53:11Z INFO HostContext] Well known directory 'Root': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:53:11Z INFO HostContext] Well known config file 'MigratedCredentials': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/.credentials_migrated'
+[2025-01-12 15:53:11Z INFO ConfigurationStore] MigratedCredFilePath: /Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/.credentials_migrated
+[2025-01-12 15:53:11Z INFO HostContext] Well known directory 'Bin': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:53:11Z INFO HostContext] Well known directory 'Root': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:53:11Z INFO HostContext] Well known config file 'Service': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/.service'
+[2025-01-12 15:53:11Z INFO ConfigurationStore] ServiceConfigFilePath: /Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/.service
+[2025-01-12 15:53:11Z INFO CommandSettings] Flag 'help': 'False'
+[2025-01-12 15:53:11Z INFO CommandSettings] Flag 'version': 'False'
+[2025-01-12 15:53:11Z INFO CommandSettings] Flag 'commit': 'False'
+[2025-01-12 15:53:11Z INFO CommandSettings] Flag 'check': 'False'
+[2025-01-12 15:53:11Z INFO CommandSettings] Command 'configure': 'False'
+[2025-01-12 15:53:11Z INFO CommandSettings] Command 'remove': 'False'
+[2025-01-12 15:53:11Z INFO CommandSettings] Command 'warmup': 'False'
+[2025-01-12 15:53:11Z INFO ConfigurationManager] LoadSettings
+[2025-01-12 15:53:11Z INFO ConfigurationStore] IsConfigured()
+[2025-01-12 15:53:11Z INFO ConfigurationStore] IsConfigured: True
+[2025-01-12 15:53:11Z INFO ConfigurationManager] Is configured: True
+[2025-01-12 15:53:11Z INFO ConfigurationStore] Read setting file: 323 chars
+[2025-01-12 15:53:11Z INFO ConfigurationManager] Settings Loaded
+[2025-01-12 15:53:11Z INFO ConfigurationStore] IsServiceConfigured()
+[2025-01-12 15:53:11Z INFO ConfigurationStore] IsServiceConfigured: False
+[2025-01-12 15:53:11Z INFO CommandSettings] Command 'run': 'True'
+[2025-01-12 15:53:11Z INFO ConfigurationStore] IsConfigured()
+[2025-01-12 15:53:11Z INFO ConfigurationStore] IsConfigured: True
+[2025-01-12 15:53:11Z INFO ConfigurationManager] Is configured: True
+[2025-01-12 15:53:11Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2025-01-12 15:53:11Z INFO Runner] Set runner startup type - Manual
+[2025-01-12 15:53:11Z INFO CommandSettings] Flag 'once': 'False'
+[2025-01-12 15:53:11Z INFO CommandSettings] Flag 'once': 'False'
+[2025-01-12 15:53:11Z INFO Runner] RunAsync
+[2025-01-12 15:53:11Z INFO ConfigurationManager] LoadSettings
+[2025-01-12 15:53:11Z INFO ConfigurationStore] IsConfigured()
+[2025-01-12 15:53:11Z INFO ConfigurationStore] IsConfigured: True
+[2025-01-12 15:53:11Z INFO ConfigurationManager] Is configured: True
+[2025-01-12 15:53:11Z INFO ConfigurationManager] Settings Loaded
+[2025-01-12 15:53:11Z INFO MessageListener] {
+  "AgentId": 21,
+  "AgentName": "MacBook-Pro-de-Pablo",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus11.actions.githubusercontent.com/Mox6thhlMnbuYCnEwmpdPqWll7lnnjQkTL953HGh5qR4aY0GVJ/",
+  "GitHubUrl": "https://github.com/DevSecOpsUsash/laboratorio-final-PS",
+  "WorkFolder": "_work"
+}
+[2025-01-12 15:53:11Z INFO MessageListener] Loading Credentials
+[2025-01-12 15:53:11Z INFO ConfigurationStore] HasCredentials()
+[2025-01-12 15:53:11Z INFO ConfigurationStore] stored True
+[2025-01-12 15:53:11Z INFO CredentialManager] GetCredentialProvider
+[2025-01-12 15:53:11Z INFO CredentialManager] Creating type OAuth
+[2025-01-12 15:53:11Z INFO CredentialManager] Creating credential type: OAuth
+[2025-01-12 15:53:11Z INFO HostContext] Well known directory 'Bin': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:53:11Z INFO HostContext] Well known directory 'Root': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner'
+[2025-01-12 15:53:11Z INFO HostContext] Well known config file 'RSACredentials': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/.credentials_rsaparams'
+[2025-01-12 15:53:11Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/.credentials_rsaparams
+[2025-01-12 15:53:11Z INFO MessageListener] Attempt to create session.
+[2025-01-12 15:53:11Z INFO MessageListener] Connecting to the Runner Server...
+[2025-01-12 15:53:11Z INFO RunnerServer] EstablishVssConnection
+[2025-01-12 15:53:11Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-01-12 15:53:11Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-01-12 15:53:11Z INFO RunnerServer] EstablishVssConnection
+[2025-01-12 15:53:11Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-01-12 15:53:11Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-01-12 15:53:11Z INFO RunnerServer] EstablishVssConnection
+[2025-01-12 15:53:11Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-01-12 15:53:11Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-01-12 15:53:12Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-01-12 15:53:12Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-01-12 15:53:12Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-01-12 15:53:12Z INFO MessageListener] VssConnection created
+[2025-01-12 15:53:12Z INFO Terminal] WRITE LINE: 
+[2025-01-12 15:53:12Z INFO Terminal] WRITE LINE: 
+[2025-01-12 15:53:12Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/.credentials_rsaparams
+[2025-01-12 15:53:12Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/.credentials_rsaparams
+[2025-01-12 15:53:13Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-12 15:53:13Z INFO MessageListener] Session created.
+[2025-01-12 15:53:13Z INFO Terminal] WRITE LINE: Current runner version: '2.321.0'
+[2025-01-12 15:53:13Z INFO Terminal] WRITE LINE: 2025-01-12 15:53:13Z: Listening for Jobs
+[2025-01-12 15:53:13Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2025-01-12 15:53:13Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/.credentials_rsaparams
+[2025-01-12 15:53:14Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-12 15:53:26Z INFO MessageListener] Message '8113253658205361146' received from session '4f6ef473-a415-44a2-8965-0c55247177f9'.
+[2025-01-12 15:53:26Z INFO ConfigurationStore] HasCredentials()
+[2025-01-12 15:53:26Z INFO ConfigurationStore] stored True
+[2025-01-12 15:53:26Z INFO CredentialManager] GetCredentialProvider
+[2025-01-12 15:53:26Z INFO CredentialManager] Creating type OAuth
+[2025-01-12 15:53:26Z INFO CredentialManager] Creating credential type: OAuth
+[2025-01-12 15:53:26Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/.credentials_rsaparams
+[2025-01-12 15:53:26Z INFO ActionsRunServer] EstablishVssConnection
+[2025-01-12 15:53:26Z INFO ActionsRunServer] Establish connection with 100 seconds timeout.
+[2025-01-12 15:53:26Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-01-12 15:53:27Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-01-12 15:53:27Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/.credentials_rsaparams
+[2025-01-12 15:53:27Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/.credentials_rsaparams
+[2025-01-12 15:53:27Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-12 15:53:28Z INFO JobDispatcher] Job request 196 for plan 096d74a8-c251-4458-9ae0-77b91e6ee486 job ed97c1dc-46ac-5b4b-f90b-528608e4672d received.
+[2025-01-12 15:53:28Z INFO JobDispatcher] Pull OrchestrationId 096d74a8-c251-4458-9ae0-77b91e6ee486.docker-build-and-run.__default from JWT claims
+[2025-01-12 15:53:28Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-01-12 15:53:28Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-01-12 15:53:28Z INFO Terminal] WRITE LINE: 2025-01-12 15:53:28Z: Running job: docker-build-and-run
+[2025-01-12 15:53:28Z INFO JobDispatcher] Start renew job request 196 for job ed97c1dc-46ac-5b4b-f90b-528608e4672d.
+[2025-01-12 15:53:28Z INFO JobDispatcher] Successfully renew job request 196, job is valid till 12/1/2025 16:03:28
+[2025-01-12 15:53:28Z INFO HostContext] Well known directory 'Bin': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:53:28Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 15:53:28Z INFO ProcessInvokerWrapper]   File name: '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin/Runner.Worker'
+[2025-01-12 15:53:28Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 151 154'
+[2025-01-12 15:53:28Z INFO ProcessInvokerWrapper]   Working directory: '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 15:53:28Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 15:53:28Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 15:53:28Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-01-12 15:53:28Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 15:53:28Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 15:53:28Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 15:53:28Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-01-12 15:53:28Z INFO ProcessInvokerWrapper] Process started with process id 87410, waiting for process exit.
+[2025-01-12 15:53:28Z INFO JobDispatcher] Send job request message to worker for job ed97c1dc-46ac-5b4b-f90b-528608e4672d.
+[2025-01-12 15:53:28Z INFO ProcessChannel] Sending message of length 27924, with hash '4d950dd3b0521e73cb9f3bab43a8a5fb42ed058834a2f5c3d844ace2ff51e64c'
+[2025-01-12 15:53:28Z INFO JobNotification] Entering JobStarted Notification
+[2025-01-12 15:53:28Z INFO JobNotification] Entering StartMonitor
+[2025-01-12 15:54:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:54:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:54:01Z INFO ProcessInvokerWrapper] Finished process 87410 with exit code 100, and elapsed time 00:00:33.0631704.
+[2025-01-12 15:54:01Z INFO JobDispatcher] Worker finished for job ed97c1dc-46ac-5b4b-f90b-528608e4672d. Code: 100
+[2025-01-12 15:54:01Z INFO JobDispatcher] finish job request for job ed97c1dc-46ac-5b4b-f90b-528608e4672d with result: Succeeded
+[2025-01-12 15:54:01Z INFO Terminal] WRITE LINE: 2025-01-12 15:54:01Z: Job docker-build-and-run completed with result: Succeeded
+[2025-01-12 15:54:01Z INFO JobDispatcher] Stop renew job request for job ed97c1dc-46ac-5b4b-f90b-528608e4672d.
+[2025-01-12 15:54:01Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 196.
+[2025-01-12 15:54:01Z INFO JobNotification] Entering JobCompleted Notification
+[2025-01-12 15:54:01Z INFO JobNotification] Entering EndMonitor
+[2025-01-12 15:54:01Z INFO MessageListener] Received job status event. JobState: Online
