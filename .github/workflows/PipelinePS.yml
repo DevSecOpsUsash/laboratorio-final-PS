@@ -210,7 +210,7 @@ jobs:
 
   Self-hosted-docker-build-and-run:
     runs-on: self-hosted
-    needs: Docker-build
+    needs: Trivy-scan-docker-image
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
