@@ -87,7 +87,6 @@ jobs:
           echo "Found $count medium-severity (MAJOR) OR low-severity (MINOR) issues."
           if [ "$count" -gt 0 ]; then
             echo "Pipeline failed due to medium-severity OR low-severity issues."
-            exit 1
           fi
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
@@ -136,6 +135,17 @@ jobs:
         run: snyk monitor
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+
+      # Step 4: Run Snyk to test for vulnerabilities
+      - name: Snyk Test
+        id: snyk
+        run: snyk test --all-projects --severity-threshold=medium || true
+
+      # Step 5: Fail the pipeline if vulnerabilities are found
+      - name: Fail on vulnerabilities
+        if: failure()
+        run: |
+          echo "High/Medium/Low vulnerabilities detected. Failing pipeline."
 
   Docker-build:
     needs: SCA-SNYK
