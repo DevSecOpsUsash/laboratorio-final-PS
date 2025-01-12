@@ -48,7 +48,15 @@ jobs:
             -Dsonar.sources=src
             -Dsonar.exclusions=**/node_modules/**,**/android/**,**/ios/**
             -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
-            -Dsonar.report.export.path=sonar-report.json
+            -Dsonar.report.export.path=./sonar-report.json
+
+      # Verify Report File
+      - name: Check SonarCloud Report
+        run: |
+          if [ ! -f "./sonar-report.json" ]; then
+            echo "SonarCloud report not found!"
+            exit 1
+          fi
 
       # Upload SonarCloud Issues Report as Artifact
       - name: Upload SonarCloud Report
@@ -56,7 +64,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: sonarcloud-report
-          path: sonar-report.json
+          path: ./sonar-report.json
 
       # Check SonarCloud for High-Severity Issues
       - name: Check for High-Severity Issues
