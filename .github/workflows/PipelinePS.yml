@@ -50,15 +50,19 @@ jobs:
             -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
             -Dsonar.report.export.path=./sonar-report.json
 
-      # Verify Report File
-      - name: Check SonarCloud Report
+      # Check for SonarCloud Report
+      - name: Verify SonarCloud Report
         run: |
+          echo "Listing current directory contents:"
+          ls -la
           if [ ! -f "./sonar-report.json" ]; then
-            echo "SonarCloud report not found!"
-            exit 1
+            echo "SonarCloud report not found, attempting to fetch via API..."
+            curl -u "${{ secrets.SONAR_TOKEN }}:" \
+              "https://sonarcloud.io/api/issues/search?componentKeys=${{ secrets.SONAR_PROJECTKEY }}" \
+              -o sonar-report.json
           fi
 
-      # Upload SonarCloud Issues Report as Artifact
+      # Upload SonarCloud Report as Artifact
       - name: Upload SonarCloud Report
         if: always()
         uses: actions/upload-artifact@v3
