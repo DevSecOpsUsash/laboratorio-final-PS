@@ -166,3 +166,58 @@
 [2025-01-12 14:55:37Z INFO JobNotification] Entering JobCompleted Notification
 [2025-01-12 14:55:37Z INFO JobNotification] Entering EndMonitor
 [2025-01-12 14:55:37Z INFO MessageListener] Received job status event. JobState: Online
+[2025-01-12 14:59:37Z INFO MessageListener] Message '7141919092691084203' received from session 'bf8d45e5-eb6c-4d33-81fa-6735dee0edaf'.
+[2025-01-12 14:59:37Z INFO ConfigurationStore] HasCredentials()
+[2025-01-12 14:59:37Z INFO ConfigurationStore] stored True
+[2025-01-12 14:59:37Z INFO CredentialManager] GetCredentialProvider
+[2025-01-12 14:59:37Z INFO CredentialManager] Creating type OAuth
+[2025-01-12 14:59:37Z INFO CredentialManager] Creating credential type: OAuth
+[2025-01-12 14:59:37Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/.credentials_rsaparams
+[2025-01-12 14:59:37Z INFO ActionsRunServer] EstablishVssConnection
+[2025-01-12 14:59:37Z INFO ActionsRunServer] Establish connection with 100 seconds timeout.
+[2025-01-12 14:59:37Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-01-12 14:59:38Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-01-12 14:59:38Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/.credentials_rsaparams
+[2025-01-12 14:59:38Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/.credentials_rsaparams
+[2025-01-12 14:59:38Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-01-12 14:59:39Z INFO JobDispatcher] Job request 189 for plan 5f7027c5-1069-4745-80c3-c88d8e784547 job f0b989ea-4eca-54c3-fcdc-2f3daac7f42a received.
+[2025-01-12 14:59:39Z INFO JobDispatcher] Pull OrchestrationId 5f7027c5-1069-4745-80c3-c88d8e784547.docker-run.__default from JWT claims
+[2025-01-12 14:59:39Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-01-12 14:59:39Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-01-12 14:59:39Z INFO JobDispatcher] Job request f0b989ea-4eca-54c3-fcdc-2f3daac7f42a processed succeed.
+[2025-01-12 14:59:39Z INFO Terminal] WRITE LINE: 2025-01-12 14:59:39Z: Running job: docker-run
+[2025-01-12 14:59:39Z INFO JobDispatcher] Start renew job request 189 for job f0b989ea-4eca-54c3-fcdc-2f3daac7f42a.
+[2025-01-12 14:59:39Z INFO JobDispatcher] Successfully renew job request 189, job is valid till 12-01-2025 15:09:39
+[2025-01-12 14:59:39Z INFO HostContext] Well known directory 'Bin': '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 14:59:39Z INFO ProcessInvokerWrapper] Starting process:
+[2025-01-12 14:59:39Z INFO ProcessInvokerWrapper]   File name: '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin/Runner.Worker'
+[2025-01-12 14:59:39Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 144 153'
+[2025-01-12 14:59:39Z INFO ProcessInvokerWrapper]   Working directory: '/Users/pablostuardo/Workspace/Diplomado-DevSecOps/laboratorio-final-PS/actions-runner/bin'
+[2025-01-12 14:59:39Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-01-12 14:59:39Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-01-12 14:59:39Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-01-12 14:59:39Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-01-12 14:59:39Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-01-12 14:59:39Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-01-12 14:59:39Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-01-12 14:59:39Z INFO ProcessInvokerWrapper] Process started with process id 13588, waiting for process exit.
+[2025-01-12 14:59:39Z INFO JobDispatcher] Send job request message to worker for job f0b989ea-4eca-54c3-fcdc-2f3daac7f42a.
+[2025-01-12 14:59:39Z INFO ProcessChannel] Sending message of length 27708, with hash 'a25a2818bdead42fda9f26def7160ad8703665197cfe882863d6741526ca9d90'
+[2025-01-12 14:59:39Z INFO JobNotification] Entering JobStarted Notification
+[2025-01-12 14:59:39Z INFO JobNotification] Entering StartMonitor
+[2025-01-12 15:00:40Z INFO JobDispatcher] Successfully renew job request 189, job is valid till 12-01-2025 15:10:40
+[2025-01-12 15:01:40Z INFO JobDispatcher] Successfully renew job request 189, job is valid till 12-01-2025 15:11:40
+[2025-01-12 15:02:08Z INFO MessageListener] Message '7662690199297311061' received from session 'bf8d45e5-eb6c-4d33-81fa-6735dee0edaf'.
+[2025-01-12 15:02:08Z INFO JobDispatcher] Job cancellation request f0b989ea-4eca-54c3-fcdc-2f3daac7f42a received, cancellation timeout 5 minutes.
+[2025-01-12 15:02:08Z INFO JobDispatcher] Send job cancellation message to worker for job f0b989ea-4eca-54c3-fcdc-2f3daac7f42a.
+[2025-01-12 15:02:08Z INFO ProcessChannel] Sending message of length 0, with hash 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
+[2025-01-12 15:02:29Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:02:29Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-01-12 15:02:29Z INFO ProcessInvokerWrapper] Finished process 13588 with exit code 103, and elapsed time 00:02:49.6483125.
+[2025-01-12 15:02:29Z INFO JobDispatcher] finish job request for job f0b989ea-4eca-54c3-fcdc-2f3daac7f42a with result: Canceled
+[2025-01-12 15:02:29Z INFO Terminal] WRITE LINE: 2025-01-12 15:02:29Z: Job docker-run completed with result: Canceled
+[2025-01-12 15:02:29Z INFO JobDispatcher] Stop renew job request for job f0b989ea-4eca-54c3-fcdc-2f3daac7f42a.
+[2025-01-12 15:02:29Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 189.
+[2025-01-12 15:02:29Z INFO JobNotification] Entering JobCompleted Notification
+[2025-01-12 15:02:29Z INFO JobNotification] Entering EndMonitor
+[2025-01-12 15:02:29Z INFO MessageListener] Received job status event. JobState: Online
