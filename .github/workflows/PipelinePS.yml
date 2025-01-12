@@ -29,6 +29,7 @@ jobs:
         run: docker push ${{ secrets.DOCKER_USERNAME }}/devsecops-finallab:latest
   docker-run:
     runs-on: self-hosted
+    needs: Docker-build
     steps:
       # Checkout the repository
       - name: Checkout code
@@ -47,15 +48,15 @@ jobs:
 
       # Build the Docker image
       - name: Build Docker Image
-        run: docker build -t nextjs-app .
+        run: sudo docker build -t devSecOps-app .
 
       # Run the Docker container
       - name: Run Next.js App in Docker
         run: |
-          docker-compose up -d
+          sudo docker-compose up -d
           sleep 5
           docker ps
 
       # (Optional) Run tests inside the container
       - name: Run Tests
-        run: docker exec nextjs-app yarn test
+        run: sudo docker exec devSecOps-app yarn test

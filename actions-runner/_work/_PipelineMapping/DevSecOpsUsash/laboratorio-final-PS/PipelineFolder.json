@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "DevSecOpsUsash/laboratorio-final-PS",
+  "pipelineDirectory": "laboratorio-final-PS",
+  "workspaceDirectory": "laboratorio-final-PS/laboratorio-final-PS",
+  "repositories": {
+    "DevSecOpsUsash/laboratorio-final-PS": {
+      "repositoryPath": "laboratorio-final-PS/laboratorio-final-PS",
+      "lastRunOn": "01/12/2025 11:55:05 -03:00"
+    }
+  },
+  "lastRunOn": "01/12/2025 11:55:05 -03:00"
+}
