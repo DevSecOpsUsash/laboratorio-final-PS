@@ -29,6 +29,7 @@ jobs:
         run: docker push ${{ secrets.DOCKER_USERNAME }}/devsecops-finallab:latest
   Deploy-to-AWS-EC2:
     name: Deploy to AWS EC2
+    needs: Docker-build
     runs-on: ubuntu-latest
     steps:
       # Step 1: Checkout the code
