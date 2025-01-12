@@ -62,13 +62,22 @@ jobs:
               -o sonar-report.json
           fi
 
-      # Upload SonarCloud Report as Artifact
-      - name: Upload SonarCloud Report
+      # Format Report into a Table
+      - name: Format SonarCloud Report into Table
+        run: |
+          echo "Formatting SonarCloud report into a table..."
+          cat sonar-report.json | jq -r '.issues[] | [.severity, .type, .message, .component] | @tsv' > formatted-report.txt
+          echo -e "Severity\tType\tMessage\tComponent\n$(cat formatted-report.txt)" > formatted-report.txt
+          echo "Formatted table report:"
+          cat formatted-report.txt
+
+      # Upload Formatted Report as Artifact
+      - name: Upload Formatted SonarCloud Report
         if: always()
         uses: actions/upload-artifact@v3
         with:
-          name: sonarcloud-report
-          path: ./sonar-report.json
+          name: sonarcloud-formatted-report
+          path: ./formatted-report.txt
 
       # Check SonarCloud for High-Severity Issues
       - name: Check for High-Severity Issues
