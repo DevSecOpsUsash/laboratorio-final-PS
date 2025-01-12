@@ -1,0 +1,62 @@
+name<<ghadelimiter_d7df2273-3b12-421b-8548-d4b57a465346
+builder-33c2f8e4-7ec4-4943-b332-adbf0811dea4
+ghadelimiter_d7df2273-3b12-421b-8548-d4b57a465346
+driver<<ghadelimiter_6599698e-b073-4f81-be39-0efb3c6c4fc7
+docker-container
+ghadelimiter_6599698e-b073-4f81-be39-0efb3c6c4fc7
+platforms<<ghadelimiter_1670965a-79d9-4a8a-90e2-72618c803c7e
+linux/arm64,linux/riscv64,linux/ppc64le,linux/s390x,linux/386,linux/arm/v7,linux/arm/v6
+ghadelimiter_1670965a-79d9-4a8a-90e2-72618c803c7e
+nodes<<ghadelimiter_29d77e51-766b-465d-a8a8-99a6a72e8aa2
+[
+  {
+    "name": "builder-33c2f8e4-7ec4-4943-b332-adbf0811dea40",
+    "endpoint": "desktop-linux",
+    "status": "running",
+    "buildkitd-flags": "--allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host",
+    "buildkit": "v0.18.2",
+    "platforms": "linux/arm64,linux/riscv64,linux/ppc64le,linux/s390x,linux/386,linux/arm/v7,linux/arm/v6",
+    "labels": {
+      "org.mobyproject.buildkit.worker.executor": "oci",
+      "org.mobyproject.buildkit.worker.hostname": "557505d187ac",
+      "org.mobyproject.buildkit.worker.network": "host",
+      "org.mobyproject.buildkit.worker.oci.process-mode": "sandbox",
+      "org.mobyproject.buildkit.worker.selinux.enabled": "false",
+      "org.mobyproject.buildkit.worker.snapshotter": "overlayfs"
+    },
+    "gcPolicy": [
+      {
+        "all": false,
+        "filter": [
+          "type==source.local",
+          "type==exec.cachemount",
+          "type==source.git.checkout"
+        ],
+        "keepDuration": "48h0m0s"
+      },
+      {
+        "all": false,
+        "keepDuration": "1440h0m0s",
+        "keepBytes": "3.725GiB"
+      },
+      {
+        "all": false,
+        "keepBytes": "3.725GiB"
+      },
+      {
+        "all": true,
+        "keepBytes": "3.725GiB"
+      }
+    ]
+  }
+]
+ghadelimiter_29d77e51-766b-465d-a8a8-99a6a72e8aa2
+endpoint<<ghadelimiter_277bca0d-32e8-4f8c-86a5-db8266cfae28
+desktop-linux
+ghadelimiter_277bca0d-32e8-4f8c-86a5-db8266cfae28
+status<<ghadelimiter_f8b34e14-c5ca-4310-a8e4-53738dcfb78b
+running
+ghadelimiter_f8b34e14-c5ca-4310-a8e4-53738dcfb78b
+flags<<ghadelimiter_090bdb57-bd0f-4dae-a656-f6cdae9e48b7
+--allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host
+ghadelimiter_090bdb57-bd0f-4dae-a656-f6cdae9e48b7
