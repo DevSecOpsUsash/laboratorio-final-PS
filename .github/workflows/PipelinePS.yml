@@ -27,25 +27,35 @@ jobs:
       # Step 4: Push the Docker image to Docker Hub
       - name: Push Docker image to Docker Hub
         run: docker push ${{ secrets.DOCKER_USERNAME }}/devsecops-finallab:latest
-  Deploy-to-AWS-EC2:
-    name: Deploy to AWS EC2
-    needs: Docker-build
-    runs-on: ubuntu-latest
+  docker-run:
+    runs-on: self-hosted
     steps:
-      # Step 1: Checkout the code
+      # Checkout the repository
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Deploy to EC2
-        uses: appleboy/ssh-action@v0.1.7
+      # Set up Docker Buildx
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      # Log in to Docker Hub (Optional)
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v2
         with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ${{ secrets.EC2_USERNAME }}
-          key: ${{ secrets.EC2_KEY }}
-          script: |
-            set -e
-            # Update Docker image and restart the container
-            docker pull ${{ secrets.DOCKER_USERNAME }}/devsecops-finallab:latest
-            docker stop devsecops-finallab || true
-            docker rm devsecops-finallab || true
-            docker run -d --name devsecops-finallab -p 3000:80 ${{ secrets.DOCKER_USERNAME }}/devsecops-finallab:latest
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      # Build the Docker image
+      - name: Build Docker Image
+        run: docker build -t nextjs-app .
+
+      # Run the Docker container
+      - name: Run Next.js App in Docker
+        run: |
+          docker-compose up -d
+          sleep 5
+          docker ps
+
+      # (Optional) Run tests inside the container
+      - name: Run Tests
+        run: docker exec nextjs-app yarn test
